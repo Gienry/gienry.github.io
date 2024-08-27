@@ -10,12 +10,10 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="这是西部领班响尾蛇
-![Image_1723832829587](https://github.com/user-attachments/assets/fac872d4-faf7-49ad-9aee-cb7a60438f35)
+<meta name="description" content="![Image_1723832829587](https://github.com/user-attachments/assets/badd32b0-be44-4875-9e1a-d45b1675143d)
 。">
 <meta property="og:title" content="美食">
-<meta property="og:description" content="这是西部领班响尾蛇
-![Image_1723832829587](https://github.com/user-attachments/assets/fac872d4-faf7-49ad-9aee-cb7a60438f35)
+<meta property="og:description" content="![Image_1723832829587](https://github.com/user-attachments/assets/badd32b0-be44-4875-9e1a-d45b1675143d)
 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://gienry.github.io/post/mei-shi.html">
@@ -61,7 +59,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/Gienry/gienry.github.io/issues/3" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/Gienry/gienry.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -77,8 +75,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p>这是西部领班响尾蛇<br>
-<a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/fac872d4-faf7-49ad-9aee-cb7a60438f35"><img src="https://github.com/user-attachments/assets/fac872d4-faf7-49ad-9aee-cb7a60438f35" alt="Image_1723832829587" style="max-width: 100%;"></a></p></div>
+<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/badd32b0-be44-4875-9e1a-d45b1675143d"><img src="https://github.com/user-attachments/assets/badd32b0-be44-4875-9e1a-d45b1675143d" alt="Image_1723832829587" style="max-width: 100%;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -137,7 +134,11 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
-
+cmButton=document.getElementById("cmButton");
+    span=document.createElement("span");
+    span.setAttribute("class","Counter");
+    span.innerHTML="1";
+    cmButton.appendChild(span);
 
 
 function openComments(){
